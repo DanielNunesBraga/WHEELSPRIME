@@ -14,6 +14,7 @@ namespace WheelsPrime.DAL
         public WheelsprimeDBContext()
             : base("wheelsprimedb", throwIfV1Schema: false)
         {
+
         }
 
         public DbSet<AppliedComponent> AppliedComponent { get; set; }
