@@ -168,8 +168,22 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AppliedComponent.cs" />
+    <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Models\Brand.cs" />
+    <Compile Include="Models\Budget.cs" />
+    <Compile Include="Models\Component.cs" />
+    <Compile Include="Models\Consumption.cs" />
+    <Compile Include="Models\Cost.cs" />
+    <Compile Include="Models\FuelType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\Notification.cs" />
+    <Compile Include="Models\Refuel.cs" />
+    <Compile Include="Models\Vehicle.cs" />
+    <Compile Include="Models\VehicleStand.cs" />
+    <Compile Include="Models\VehicleWorkshop.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
