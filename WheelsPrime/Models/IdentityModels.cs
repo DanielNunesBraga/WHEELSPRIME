@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using WheelsPrime.DAL;
+using System.Collections.Generic;
 
 namespace WheelsPrime.Models
 {
@@ -17,7 +18,12 @@ namespace WheelsPrime.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public ICollection<VehicleWorkshop> Vehicle { get; set; }
+
+        public ICollection<VehicleStand> StandVehicle { get; set; }
+        
+        public ICollection<Notification> Notifications { get; set; }
+
     }
-
-
 }
