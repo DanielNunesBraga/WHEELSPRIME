@@ -6,7 +6,6 @@ using System.Web;
 using WheelsPrime.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using wheelsprime.Models;
 
 namespace WheelsPrime.DAL
 {
