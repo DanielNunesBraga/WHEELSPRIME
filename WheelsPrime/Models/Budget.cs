@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -9,6 +10,8 @@ namespace WheelsPrime.Models
     {
         public int ID { set; get; }
         public double Labor { set; get; }
+
+        [DataType(DataType.DateTime)]
         public DateTime Date { set; get; }
 
         public ICollection<Notification> Notification { set; get; }

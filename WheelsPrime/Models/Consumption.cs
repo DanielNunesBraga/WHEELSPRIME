@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -12,6 +13,9 @@ namespace WheelsPrime.Models
         public int Odometer { set; get; }
         public double Liters { set; get; }
         public double PriceLiter { set; get; }
+
+        [DataType(DataType.Date)]
+        public DateTime Date { get; set; }
         //public int RefuelID { set; get; }
         //public int VehicleWorkshopID { set; get; }
 
