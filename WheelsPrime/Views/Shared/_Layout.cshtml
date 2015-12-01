@@ -31,7 +31,6 @@
                     <a class="navbar-brand" rel="home" href="@Url.Action("Index", "Home")">
                         <img src="http://i.imgur.com/nleWvkE.jpg?1" class="img-responsive">
                     </a>
-                    @Html.ActionLink(" ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -51,22 +50,21 @@
     </div>
 
     <footer class="footer-distributed">
-        <div class="footer-left">
+        <div>
 
             <div class="row margin-bottom-60">
                 <div class="col-sm-4 margin-bottom-30">
                     <div class="footer-inner">
                         <h3><a href="index.html"><img src="http://i.imgur.com/nleWvkE.jpg?1" alt=""></a> </h3>
                         <p>
-
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+                            O nosso site é o mais tops !
                         </p>
                         <div class="divided-30"></div>
                         <ul class="social list-inline">
                             <li><a href="http://www.facebook.com" class="fb"><i class="ion-social-facebook"></i></a></li>
                             <li><a href="#" class="dribbble"><i class="ion-social-instagram"></i></a></li>
                             <li><a href="#" class="in"><i class="ion-social-linkedin"></i></a></li>
-                            <li><a href="#" class="fbb"><i class="ion-social-googleplus-outline"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="ion-social-googleplus-outline"></i></a></li>
                         </ul>
                     </div><!--fotter inner-->
                 </div>
@@ -76,29 +74,29 @@
                         <h3>Contact us</h3>
 
                         <ul class="list-unstyled contact-list">
-                            <li><i class="ion-ios-home"></i> - 128, Mahadev nagar , 302021</li>
-                            <li><i class="ion-ios-telephone"></i> - 1800 2345 23456</li>
-                            <li><i class="ion-ios-email"></i> - Support@codepiple.com</li>
-
+                            <li><i class="ion-ios-location">  R. Cmte. Pinho e Freitas, 3750-127 Águeda</i></li>
+                            <li><i class="ion-ios-telephone">  234 500 611</i></li>
+                            <li><i class="ion-ios-email">  RH@wheelsprime.com</i></li>
                         </ul>
                     </div><!--fotter inner-->
                 </div>
                 <div class="col-sm-4">
                     <div class="footer-inner">
                         <h3>Links</h3>
-                        <p></p>
-                        <form role="form" class="subscribe-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter email to subscribe">
-
-                                <button class="btn btn-default" data-toggle="tooltip" title="" data-original-title="Subscribe" type="submit"><i class="ion-ios-paperplane"></i></button>
-
-                            </div>
-                        </form>
+                        <ul class="list-unstyled contact-list">
+                            <li class="ion-home">  @Html.ActionLink("Home", "Index", "Home")</li>
+                            <li class="ion-android-car">  @Html.ActionLink("Vehicles", "Index", "Home")</li>
+                            <li class="ion-ios-contact-outline">  @Html.ActionLink("Client Area", "Index", "Home")</li>
+                            <li class="ion-wrench">  @Html.ActionLink("Services", "Index", "Home")</li>
+                            <li class="ion-information-circled">  @Html.ActionLink("About", "Index", "Home")</li>
+                        </ul>
                     </div><!--fotter inner-->
                 </div>
             </div>
+            <hr class="hr"/>
         </div>
+            <p class="text-center">©Copyright 2015. All rights reserved.</p>
+            <p class="text-center">WheelsPrime</p>
     </footer>
     
         @Scripts.Render("~/bundles/jquery")
