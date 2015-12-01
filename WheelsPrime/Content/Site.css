@@ -22,3 +22,20 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.navbar-brand {
+    margin-top: -20px;
+}
+
+.logintitle {
+    text-align: center;
+}
+
+.btn.btn-info.login {
+    margin-left: 35px;
+}
+
+.form-group.login{
+    margin-left: 500px;
+}
+
