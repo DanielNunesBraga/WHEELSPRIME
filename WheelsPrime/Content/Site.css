@@ -22,3 +22,608 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.hr {
+    border-color:darkgray;
+}
+
+.cor {
+    background-color: darkgray;
+}
+
+footer {
+    background-color:#222;
+
+}
+
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+@import url(https://www.google.com/fonts#UsePlace:use/Collection:Arimo)
+
+/*Carrousel Css & media query*/
+.carrousel-style {
+    width: 400px;
+    position: center;
+    padding-left: 50px;
+    margin: 30px auto;
+}
+
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter: alpha(opacity=0); /* IE support */
+}
+
+.carousel .carousel-inner .item {
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+@media screen and (max-width: 600px) {
+
+    .carrousel-style {
+        display: none;
+    }
+}
+
+/**/
+
+body {
+    padding-top: 50px;
+    /*padding-bottom: 20px;*/
+}
+
+/*Estes 3 tinham sido apagados serão precisos?*/
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+.footer-distributed {
+    background-color: black;
+    border-color: #E7E7E7;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    height: 45%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 60px 40px;
+    margin-top: 80px;
+    overflow: hidden;
+    font-family:Arimo;
+
+    position: relative;
+    bottom: 0;
+}
+
+    /* Footer left */
+
+    .footer-distributed .footer-left {
+        float: left;
+    }
+
+    /* The company logo */
+
+    .footer-distributed h3 {
+        color: #ffffff;
+        font: normal 36px 'Cookie', cursive;
+        margin: 0 0 10px;
+    }
+
+        .footer-distributed h3 span {
+            color: #5383d3;
+        }
+
+    /* Footer links */
+
+    .footer-distributed .footer-links {
+        color: #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+        .footer-distributed .footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+        }
+
+    .footer-distributed .footer-company-name {
+        color: #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    /* Footer social icons */
+
+    .footer-distributed .footer-icons {
+        margin-top: 40px;
+    }
+
+        .footer-distributed .footer-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 3px;
+            margin-bottom: 5px;
+        }
+
+    /* Footer Right */
+
+    .footer-distributed .footer-right {
+        float: right;
+    }
+
+        .footer-distributed .footer-right p {
+            display: inline-block;
+            vertical-align: top;
+            margin: 15px 42px 0 0;
+            color: #ffffff;
+        }
+
+    /* The contact form */
+
+    .footer-distributed form {
+        display: inline-block;
+    }
+
+        .footer-distributed form input,
+        .footer-distributed form textarea {
+            display: block;
+            border-radius: 3px;
+            box-sizing: border-box;
+            background-color: #1f2022;
+            box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+            border: none;
+            resize: none;
+            font: inherit;
+            font-size: 14px;
+            font-weight: normal;
+            color: #d1d2d2;
+            width: 400px;
+            padding: 15px;
+        }
+
+    .footer-distributed ::-webkit-input-placeholder {
+        color: #5c666b;
+    }
+
+    .footer-distributed ::-moz-placeholder {
+        color: #5c666b;
+        opacity: 1;
+    }
+
+    .footer-distributed :-ms-input-placeholder {
+        color: #5c666b;
+    }
+
+
+    .footer-distributed form input {
+        height: 46px;
+        margin-bottom: 15px;
+    }
+
+    .footer-distributed form textarea {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .footer-distributed form button {
+        border-radius: 3px;
+        background-color: #33383b;
+        color: #ffffff;
+        border: 0;
+        padding: 15px 50px;
+        font-weight: bold;
+        float: right;
+    }
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+        .footer-distributed .footer-company-name {
+            font-size: 12px;
+        }
+
+        .footer-distributed form input,
+        .footer-distributed form textarea {
+            width: 250px;
+        }
+
+        .footer-distributed form button {
+            padding: 10px 35px;
+        }
+}
+
+@media (max-width: 800px) {
+
+    .footer-distributed {
+        padding: 30px;
+    }
+
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-right {
+            float: none;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .footer-distributed .footer-left {
+            margin-bottom: 40px;
+        }
+
+        .footer-distributed form {
+            margin-top: 30px;
+        }
+
+        .footer-distributed form {
+            display: block;
+        }
+
+            .footer-distributed form button {
+                float: none;
+            }
+}
+
+.col-md-5 {
+    margin-left: 350px;
+}
+
+.chatname {
+    text-align: center;
+}
+
+.fb-profile img.fb-image-lg {
+    z-index: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.fb-image-profile {
+    margin: -90px 10px 0px 50px;
+    z-index: 9;
+    width: 20%;
+}
+
+@media (max-width:768px) {
+    .fb-profile-text > h1 {
+        font-weight: 700;
+        font-size: 16px;
+        margin-left: 100px;
+    }
+
+    .fb-image-profile {
+        margin: -45px 10px 0px 25px;
+        z-index: 9;
+        width: 20%;
+    }
+
+    .titlee {
+        margin-left: 50px;
+    }
+}
+
+.about {
+    padding-left: 40px;
+    margin-left: 450px;
+}
+
+.wikirials {
+    padding-left: 40px;
+}
+
+
+.btn.btn-secondary.login {
+    margin-left: 25px;
+}
+
+.checkbox.login {
+    margin-left: 140px;
+}
+
+.cookie {
+    padding-left: 210px;
+}
+
+.colorr {
+    color: black;
+}
+
+.list {
+    margin-left: 195px;
+}
+
+.row.profile {
+    padding-right: -100px;
+}
+
+.aboutt {
+    padding-top: 5px;
+    padding-right: 19px;
+}
+
+.col-xs-12.col-sm-6.col-md-6 {
+    width: 98.5%;
+}
+
+.col-sm-6.col-md-8.profile {
+    padding-right: 1px;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welll {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 0px 35px rgba(15, 20, 15, 10);
+    margin-top: 50px;
+}
+
+.profilefootercustom {
+    margin-right: 10px;
+}
+
+
+.btn-glyphicon {
+    padding: 8px;
+    background: #ffffff;
+    margin-right: 4px;
+}
+
+.icon-btn {
+    padding: 1px 15px 3px 2px;
+    border-radius: 50px;
+}
+
+
+
+.grow img {
+    width: 570px;
+    height: 360px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+    .grow img:hover {
+        width: 150%;
+        height: 150%;
+    }
+
+.pic {
+    height: 360px;
+    width: 570px;
+    overflow: hidden;
+    margin: 20px;
+    -webkit-box-shadow: 5px 5px 5px #111;
+    box-shadow: 2px -2px 5px #888585;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+}
+
+    .fileUpload input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+.btn-glyphicon {
+    padding: 8px;
+    background: #ffffff;
+    margin-right: 4px;
+}
+
+.icon-btn {
+    padding: 1px 15px 3px 2px;
+    border-radius: 50px;
+}
+
+.aboutul {
+    text-align: center;
+}
+
+.symbol1 {
+    margin-left: 75px;
+}
+
+.movement {
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.symbol {
+    margin-left: 275px;
+    margin-top: -70px;
+}
+
+.adress {
+    margin-top: -52px;
+    margin-left: -3px;
+}
+
+.team {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.login1 {
+    margin-left: 500px;
+}
+
+.loginForm {
+    margin-left: 225px;
+}
+
+.colmove {
+    margin-left: 55px;
+}
+
+.btn.btn-info.login {
+    margin-left: 50px;
+}
+
+.form-group1 {
+    margin-left: 90px;
+}
+
+.titleee {
+    margin-left: 425px;
+}
+
+.cookie {
+    text-align: center;
+    margin-left: -150px;
+}
+
+.btn.btn-success.register {
+    margin-left: 325px;
+}
+
+.col-md-10.create {
+    margin-left: -10px;
+}
+
+.btn.btn-default.create {
+    margin-top: 25px;
+}
+
+.marginclass {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.form-actions.no-color.category {
+    margin-left: 100px;
+}
+
+.btn.btn-default.category {
+    margin-right: 10px;
+}
+
+.category.delete {
+    margin-left: 95px;
+    margin-top: -25px;
+}
+
+.form-actions.no-color.group {
+    margin-left: 100px;
+}
+
+.btn.btn-default.group {
+    margin-right: 10px;
+}
+
+.tutorial.delete {
+    margin-left: 95px;
+    margin-top: -25px;
+}
+
+.footer-links.footer {
+    margin-top: 15px;
+}
+
+.slightmovement {
+    margin-top: 25px;
+}
+
+.strongtext {
+    font-weight: bold;
+}
+
+.moverole {
+    margin-left: 80px;
+    margin-top: -22px;
+}
+
+.textareacomment {
+    resize: vertical;
+}
+
+.spanprofile {
+    display: inline-flex;
+}
+
+.profilebuttons {
+    margin-right: 5px;
+}
+
+.col-md-3.create {
+    padding-right: -300px;
+    padding-left: -300px;
+}
+
+.editfile {
+    margin-left: 180px;
+}
+
+.btn.btn-success.role {
+    margin-top: 15px;
+}
+
+.slightmove {
+    margin-top: -10px;
+}
+
+.tut {
+margin: 10px 30px 60px;
+}
