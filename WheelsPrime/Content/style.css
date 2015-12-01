@@ -300,6 +300,10 @@ social
     background-color:  #3b5998;
     color:#fff;
 }
+.social li a.fbb:hover{
+    background-color:  #FFF;
+    color:#fff;
+}
 .social li a.twitter:hover{
     background-color:  #00aced;
     color:#fff;
