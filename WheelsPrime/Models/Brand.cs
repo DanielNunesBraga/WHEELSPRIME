@@ -7,7 +7,7 @@ namespace WheelsPrime.Models
 {
     public class Brand
     {
-        public int BrandID { set; get; }
+        public int ID { set; get; }
         public String Name { set; get; }
 
         public ICollection<Model> Model { set; get; }

@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace wheelsprime.Models
+namespace WheelsPrime.Models
 {
     public class Component
     {
-        public int ComponentID { set; get; }
+        public int ID { set; get; }
 
         public String Ref { set; get; }
 
         public String Description { set; get; }
 
-        public int Value { set; get; }
+        public double Price { set; get; }
 
         public String RefCompetition { set; get; }
 
-        public virtual AppliedComponent AppliedComponent { set; get; }
+        public ICollection <AppliedComponent> AppliedComponents { set; get; }
     }
 }

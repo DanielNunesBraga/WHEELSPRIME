@@ -5,9 +5,11 @@ using System.Web;
 
 namespace WheelsPrime.Models
 {
-    public class VehicleStand : Vehicle
+    public class VehicleStand:Vehicle
     {
-        public int VehicleStandID { set; get; }
+        //public int ID { set; get; }
         public int Price { set; get; }
+
+        public virtual ApplicationUser InterestedUser { get; set; }
     }
 }

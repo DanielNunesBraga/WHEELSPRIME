@@ -6,7 +6,6 @@ using System.Web;
 using WheelsPrime.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using wheelsprime.Models;
 
 namespace WheelsPrime.DAL
 {
@@ -15,6 +14,7 @@ namespace WheelsPrime.DAL
         public WheelsprimeDBContext()
             : base("wheelsprimedb", throwIfV1Schema: false)
         {
+
         }
 
         public DbSet<AppliedComponent> AppliedComponent { get; set; }
