@@ -5,7 +5,7 @@
 }
 
 <h2 class="logintitle">@ViewBag.Title</h2>
-<div class="row">
+<div class="row login">
     <div class="col-md-8">
         <section id="loginForm">
             @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -28,18 +28,20 @@
                         @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <div class="checkbox">
-                            @Html.CheckBoxFor(m => m.RememberMe)
-                            @Html.LabelFor(m => m.RememberMe)
+                <div class="loginspecial">
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <div class="checkbox">
+                                @Html.CheckBoxFor(m => m.RememberMe)
+                                @Html.LabelFor(m => m.RememberMe)
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10 login">
-                        <input type="submit" value="Log in" class="btn btn-success" />
-                        <a id="registerLink" href="/Account/Register" class="btn btn-info login">Register</a>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10 login">
+                            <input type="submit" value="Log in" class="btn btn-success" />
+                            <a id="registerLink" href="/Account/Register" class="btn btn-info login">Register</a>
+                        </div>
                     </div>
                 </div>
                 @*<p>

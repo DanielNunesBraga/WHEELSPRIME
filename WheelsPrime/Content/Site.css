@@ -29,14 +29,17 @@ textarea {
 
 .logintitle {
     text-align: center;
-}
+}   
 
 .btn.btn-info.login {
     margin-left: 35px;
 }
 
-.form-group.login{
-    margin-left: 500px;
+.row.login {
+    margin-left: 325px;
 }
 .
 
+.loginspecial {
+
+}
