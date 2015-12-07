@@ -6,7 +6,7 @@
 
 
 body {
-    
+    padding-top: 90px;
     /*padding-bottom: 20px;*/
 }
 
@@ -1244,7 +1244,7 @@ a, a:hover, a:focus{
 
 
 .wellcustom {
-  margin-top:120px;
+  margin-top:10px;
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
