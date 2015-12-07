@@ -763,8 +763,16 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .navbar-brand {
   font-size: inherit;
+   
+ 
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.imgbrand{
+    width:120px;
+ padding-top:10px;
+ 
 }
 /*************** 
   Footer Start 

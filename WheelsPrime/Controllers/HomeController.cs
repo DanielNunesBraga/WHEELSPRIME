@@ -26,5 +26,12 @@ namespace WheelsPrime.Controllers
 
             return View();
         }
+
+        public ActionResult AddCarro()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }

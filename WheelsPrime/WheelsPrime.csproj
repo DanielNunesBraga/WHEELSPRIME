@@ -254,6 +254,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_OficinaPartial.cshtml" />
     <Content Include="Views\Shared\_StandPartial.cshtml" />
+    <Content Include="Views\Home\AddCarro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
